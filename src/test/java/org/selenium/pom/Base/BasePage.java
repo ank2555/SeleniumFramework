@@ -1,5 +1,6 @@
 package org.selenium.pom.Base;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -9,10 +10,13 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 import java.util.List;
 
+import static org.selenium.pom.utils.FrameworkUtility.readConfigurationFile;
+
 public class BasePage extends BaseTest  {
 
 
     protected WebDriver driver;
+  String BaseURL;
     protected WebDriverWait waitShort;
     protected WebDriverWait waitLong;
     public BasePage(WebDriver driver)
@@ -29,7 +33,9 @@ public class BasePage extends BaseTest  {
 
     public BasePage loadpage(String endpoint)
     {
-        driver.get("http://askomdch.com"+endpoint);
+
+        BaseURL= readConfigurationFile("baseUrl");
+        driver.get(BaseURL+endpoint);
         return this;
     }
 
@@ -68,6 +74,33 @@ public class BasePage extends BaseTest  {
     {
         return waitShort.until(ExpectedConditions.visibilityOfElementLocated(element));
     }
+
+
+    public String webElementAlertisPresent(By element)
+    {
+
+        driver.findElement(element).click();
+        Alert alert= waitShort.until(ExpectedConditions.alertIsPresent());
+     driver.switchTo().alert();
+       String alertString= alert.getText();
+        alert.accept();
+        return alertString;
+    }
+
+    public String webElementAlertSendValue (By element, String Name)
+    {
+
+        driver.findElement(element).click();
+        Alert alert= waitShort.until(ExpectedConditions.alertIsPresent());
+        String alertString=  driver.switchTo().alert().getText();
+
+        driver.switchTo().alert().sendKeys(Name);
+        alert.accept();
+        return alertString;
+    }
+
+
+
 
 
 

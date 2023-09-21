@@ -1,1 +1,61 @@
-{"uuid":"1037e63a-0dd4-47f9-b805-28cde553b2c1","historyId":"5850737c28cd0f5f38a6826dfb53e197","fullName":"org.selenium.pom.tests.Test2.AlertSendValue","labels":[{"name":"package","value":"org.selenium.pom.tests.Test2"},{"name":"testClass","value":"org.selenium.pom.tests.Test2"},{"name":"testMethod","value":"AlertSendValue"},{"name":"parentSuite","value":"Default Suite"},{"name":"suite","value":"SeleniumFramework"},{"name":"subSuite","value":"org.selenium.pom.tests.Test2"},{"name":"host","value":"Ankits-MBP"},{"name":"thread","value":"9044@Ankits-MBP.main(1)"},{"name":"framework","value":"testng"},{"name":"language","value":"java"}],"links":[],"name":"AlertSendValue","status":"passed","statusDetails":{"known":false,"muted":false,"flaky":false},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1679778897447,"stop":1679778899523}
+{
+  "uuid": "1037e63a-0dd4-47f9-b805-28cde553b2c1",
+  "historyId": "5850737c28cd0f5f38a6826dfb53e197",
+  "fullName": "org.selenium.pom.tests.Test2.AlertSendValue",
+  "labels": [
+    {
+      "name": "package",
+      "value": "org.selenium.pom.tests.Test2"
+    },
+    {
+      "name": "testClass",
+      "value": "org.selenium.pom.tests.Test2"
+    },
+    {
+      "name": "testMethod",
+      "value": "AlertSendValue"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Default Suite"
+    },
+    {
+      "name": "suite",
+      "value": "SeleniumFramework"
+    },
+    {
+      "name": "subSuite",
+      "value": "org.selenium.pom.tests.Test2"
+    },
+    {
+      "name": "host",
+      "value": "Ankits-MBP"
+    },
+    {
+      "name": "thread",
+      "value": "9044@Ankits-MBP.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    }
+  ],
+  "links": [],
+  "name": "AlertSendValue",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1679778897447,
+  "stop": 1679778899523
+}

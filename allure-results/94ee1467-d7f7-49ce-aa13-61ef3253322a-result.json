@@ -1,1 +1,61 @@
-{"uuid":"94ee1467-d7f7-49ce-aa13-61ef3253322a","historyId":"ac2fd5c92f2183769e7fd6b2a9afc596","fullName":"org.selenium.pom.tests.Test2.javaScriptCommand","labels":[{"name":"package","value":"org.selenium.pom.tests.Test2"},{"name":"testClass","value":"org.selenium.pom.tests.Test2"},{"name":"testMethod","value":"javaScriptCommand"},{"name":"parentSuite","value":"Default Suite"},{"name":"suite","value":"SeleniumFramework"},{"name":"subSuite","value":"org.selenium.pom.tests.Test2"},{"name":"host","value":"Ankits-MacBook-Pro.local"},{"name":"thread","value":"73542@Ankits-MacBook-Pro.local.main(1)"},{"name":"framework","value":"testng"},{"name":"language","value":"java"}],"links":[],"name":"javaScriptCommand","status":"passed","statusDetails":{"known":false,"muted":false,"flaky":false},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1686169008739,"stop":1686169018036}
+{
+  "uuid": "94ee1467-d7f7-49ce-aa13-61ef3253322a",
+  "historyId": "ac2fd5c92f2183769e7fd6b2a9afc596",
+  "fullName": "org.selenium.pom.tests.Test2.javaScriptCommand",
+  "labels": [
+    {
+      "name": "package",
+      "value": "org.selenium.pom.tests.Test2"
+    },
+    {
+      "name": "testClass",
+      "value": "org.selenium.pom.tests.Test2"
+    },
+    {
+      "name": "testMethod",
+      "value": "javaScriptCommand"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Default Suite"
+    },
+    {
+      "name": "suite",
+      "value": "SeleniumFramework"
+    },
+    {
+      "name": "subSuite",
+      "value": "org.selenium.pom.tests.Test2"
+    },
+    {
+      "name": "host",
+      "value": "Ankits-MacBook-Pro.local"
+    },
+    {
+      "name": "thread",
+      "value": "73542@Ankits-MacBook-Pro.local.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    }
+  ],
+  "links": [],
+  "name": "javaScriptCommand",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1686169008739,
+  "stop": 1686169018036
+}

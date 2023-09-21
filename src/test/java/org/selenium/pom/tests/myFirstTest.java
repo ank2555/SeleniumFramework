@@ -1,6 +1,7 @@
 package org.selenium.pom.tests;
 
 //import *;
+
 import org.openqa.selenium.By;
 import org.selenium.pom.Base.BaseTest;
 import org.selenium.pom.Objects.AccountCreationUsers;
@@ -15,27 +16,23 @@ import org.testng.annotations.Test;
 import java.io.IOException;
 
 
-public class myFirstTest  extends BaseTest {
+public class myFirstTest extends BaseTest {
 
-  //  public static WebDriver driver=null;
+    //  public static WebDriver driver=null;
 
 
     private static final Logger LOG = LoggerFactory
             .getLogger(myFirstTest.class);
 
 
+    //@Test
+    public void AccountCreation() throws IOException {
 
-
-
-
-//@Test
-    public void AccountCreation() throws  IOException {
-
-    AccountCreationUsers accountCreationUsers=JacksonUtils.Fileloader("AccountUserdetails.json", AccountCreationUsers.class);
- account account=new HomePage(  getDriver()).load().AccountPage();
+        AccountCreationUsers accountCreationUsers = JacksonUtils.Fileloader("AccountUserdetails.json", AccountCreationUsers.class);
+        account account = new HomePage(getDriver()).load().AccountPage();
         //account account=new HomePage(getDriver()).AccountPage().ClickRegister(accountCreationUsers);
-         Assert.assertEquals(account.RegisterText(),"Register");
-         account.ClickRegister(accountCreationUsers);
+        Assert.assertEquals(account.RegisterText(), "Register");
+        account.ClickRegister(accountCreationUsers);
 
 
 
@@ -59,7 +56,7 @@ public class myFirstTest  extends BaseTest {
     }
 
 
-   // @Test
+    // @Test
 
     public void loginAccount() throws InterruptedException {
 
@@ -79,45 +76,44 @@ public class myFirstTest  extends BaseTest {
         getDriver().quit();
     }
 
- //   @Test
-    public void AddedtoCart() throws InterruptedException
-    {
+    //   @Test
+    public void AddedtoCart() throws InterruptedException {
 
 
-        Billinginformation billinginformation=new Billinginformation();
+        Billinginformation billinginformation = new Billinginformation();
         billinginformation.setFirstname("Ankit");
         billinginformation.setLastname("Jain");
         billinginformation.setCity("Noida");
         billinginformation.setAddressLineone("Noida blue cross society");
         billinginformation.setEmail("askomch233@gmail.com");
         billinginformation.setPostcode("91488");
-        HomePage homePage =new HomePage(getDriver());
-        StorePage storePage=homePage.ClickstoreMenuPage();
-   storePage.
-           /*EnterTextEarchField("Bracelet")
-          .clickSearchBTn().
-           gettitle();*/
-                 search("Bracelet");
-   Assert.assertEquals( storePage.gettitle(),"Search results: “Bracelet”");
+        HomePage homePage = new HomePage(getDriver());
+        StorePage storePage = homePage.ClickstoreMenuPage();
+        storePage.
+                /*EnterTextEarchField("Bracelet")
+               .clickSearchBTn().
+                gettitle();*/
+                        search("Bracelet");
+        Assert.assertEquals(storePage.gettitle(), "Search results: “Bracelet”");
 
-   storePage.addToCart("Boho Bangle Bracelet");
-           Thread.sleep(1000);
-       // storePage.viewCart();
-        cartPage cartpage=storePage.viewCart();
-   Assert.assertEquals( cartpage.checkCartProduct(),"Boho Bangle Bracelet");
-   checkoutPage checkoutpage=  cartpage.checkoutMethod();
-   checkoutpage.
-           setFirstName("Ankit").
-           setLastName("Jain").
-           setCompany("DELL").
-           setBilliingAddress1("NSEZ Noida").
-           setBilliingCity("Noida").
-           setBillingPostcode("94188").
-           setbillingEmail("jain244@gmail.com");
-   Thread.sleep(5000);
+        storePage.addToCart("Boho Bangle Bracelet");
+        Thread.sleep(1000);
+        // storePage.viewCart();
+        cartPage cartpage = storePage.viewCart();
+        Assert.assertEquals(cartpage.checkCartProduct(), "Boho Bangle Bracelet");
+        checkoutPage checkoutpage = cartpage.checkoutMethod();
+        checkoutpage.
+                setFirstName("Ankit").
+                setLastName("Jain").
+                setCompany("DELL").
+                setBilliingAddress1("NSEZ Noida").
+                setBilliingCity("Noida").
+                setBillingPostcode("94188").
+                setbillingEmail("jain244@gmail.com");
+        Thread.sleep(5000);
         checkoutpage.setPlaceOrder();
         Thread.sleep(5000);
-   Assert.assertEquals(checkoutpage.setTextValidation(),"Thank you. Your order has been received.");
+        Assert.assertEquals(checkoutpage.setTextValidation(), "Thank you. Your order has been received.");
 
 
 
@@ -186,10 +182,7 @@ Assert.assertEquals(driver.findElement(By.cssSelector(".woocommerce-notice")).ge
     }
 
 
-
-
-
-//@Test
+    //@Test
     public void loginAndLogoutDirectBankAccountTransfer() throws IOException {
 
    /* Billinginformation billinginformation=new Billinginformation();
@@ -202,29 +195,29 @@ Assert.assertEquals(driver.findElement(By.cssSelector(".woocommerce-notice")).ge
             setPostcode("91488").
             setCompany("DELl");*/
 
-   // Billinginformation billinginformation=new Billinginformation("Ankit","Jain","blue corss society noida","Noida","94188","ank2553@gmail.com","ntt");
+        // Billinginformation billinginformation=new Billinginformation("Ankit","Jain","blue corss society noida","Noida","94188","ank2553@gmail.com","ntt");
 
-    Billinginformation billinginformation=JacksonUtils.Fileloader("SamppleDataFile.json",Billinginformation.class);
+        Billinginformation billinginformation = JacksonUtils.Fileloader("SamppleDataFile.json", Billinginformation.class);
 //JacksonUtils jacksonUtils=new JacksonUtils();
 
-    //Products product=new Products(1199);
-   // Userdetail userdetail=new Userdetail("","")
-    StorePage storePage =new HomePage(getDriver()).load()
-            .ClickstoreMenuPage()
-            .search("Bracelet");
-    Assert.assertEquals( storePage.gettitle(),"Search results: “Bracelet”");
+        //Products product=new Products(1199);
+        // Userdetail userdetail=new Userdetail("","")
+        StorePage storePage = new HomePage(getDriver()).load()
+                .ClickstoreMenuPage()
+                .search("Bracelet");
+        Assert.assertEquals(storePage.gettitle(), "Search results: “Bracelet”");
 
 
-    storePage.addToCart("Boho Bangle Bracelet");
-   //  Thread.sleep(5000); //------added Implicit Wait in driver manager
-    // storePage.viewCart();
-    cartPage cartpage=storePage.viewCart();
-    Assert.assertEquals( cartpage.checkCartProduct(),"Boho Bangle Bracelet" );
-    checkoutPage checkoutpage=  cartpage.checkoutMethod();
-   loginPage loginpage= checkoutpage.login();
-   //loginpage.setUsername("Ullu").setPassword("Sunday@1234").clikLogin();
-   loginpage.clikLogin("Ullu","Sunday@1234");
-    checkoutpage.setBillinginformation(billinginformation);
+        storePage.addToCart("Boho Bangle Bracelet");
+        //  Thread.sleep(5000); //------added Implicit Wait in driver manager
+        // storePage.viewCart();
+        cartPage cartpage = storePage.viewCart();
+        Assert.assertEquals(cartpage.checkCartProduct(), "Boho Bangle Bracelet");
+        checkoutPage checkoutpage = cartpage.checkoutMethod();
+        loginPage loginpage = checkoutpage.login();
+        //loginpage.setUsername("Ullu").setPassword("Sunday@1234").clikLogin();
+        loginpage.clikLogin("Ullu", "Sunday@1234");
+        checkoutpage.setBillinginformation(billinginformation);
           /*  setFirstName("Ankit").
             setLastName("Jain").
             setCompany("DELL").
@@ -232,10 +225,10 @@ Assert.assertEquals(driver.findElement(By.cssSelector(".woocommerce-notice")).ge
             setBilliingCity("Noida").
             setBillingPostcode("94188").
             setbillingEmail("jain244@gmail.com");*/
-    //Thread.sleep(5000); //------added Implicit Wait in driver manager
-    checkoutpage.setPlaceOrder();
-  //   Thread.sleep(5000); //------added Implicit Wait in driver manager
-    Assert.assertEquals(checkoutpage.setTextValidation(),"Thank you. Your order has been received.");
+        //Thread.sleep(5000); //------added Implicit Wait in driver manager
+        checkoutpage.setPlaceOrder();
+        //   Thread.sleep(5000); //------added Implicit Wait in driver manager
+        Assert.assertEquals(checkoutpage.setTextValidation(), "Thank you. Your order has been received.");
 
 /*
 
@@ -307,90 +300,72 @@ Assert.assertEquals(driver.findElement(By.cssSelector(".woocommerce-notice")).ge
     }
 
 
-
-
-
     @Test
-    public void CheckoutDirectBankAccountTransfer() throws IOException
-    {
+    public void CheckoutDirectBankAccountTransfer() throws IOException {
 
 
-        Billinginformation billinginformation=JacksonUtils.Fileloader("SamppleDataFile.json",Billinginformation.class);
+        Billinginformation billinginformation = JacksonUtils.Fileloader("SamppleDataFile.json", Billinginformation.class);
         //Products product=new Products(1199);
-        StorePage storePage =new HomePage(getDriver()).load()
-
-                .ClickstoreMenuPage();
-        storePage.pageLoaded();
-
-           storePage.search("Bracelet");
-
-       Assert.assertEquals( storePage.gettitle(),"Search results: “Bracelet”");
-        //Assert.assertTrue(storePage.gettitle().contains("Search results") );
-        storePage.addToCart("Boho Bangle Bracelet");
-       // Thread.sleep(5000); //------added Implicit Wait in driver manager
-         cartPage cartpage=storePage.viewCart();
-
-        Assert.assertEquals( cartpage.checkCartProduct(),"Boho Bangle Bracelet" );
-        checkoutPage checkoutpage=  cartpage.checkoutMethod();
-        loginPage loginpage= checkoutpage.login();
-            loginpage.clikLogin("ank2557","xain@34567568");
-//Thread.sleep(5000);
-        checkoutpage.setBillinginformation(billinginformation);
-       // Thread.sleep(5000); //------added Implicit Wait in driver manager
-        checkoutpage.setPlaceOrder();
-       // Thread.sleep(5000); //------added Implicit Wait in driver manager
-        Assert.assertEquals(checkoutpage.setTextValidation(),"Thank you. Your order has been received.");
-
-
-
-
-
-
-
-    }
-
-
-//@Test
-    public void CheckoutDirectBankAccountTransfer2() throws IOException
-    {
-
-
-        Billinginformation billinginformation=JacksonUtils.Fileloader("SamppleDataFile.json",Billinginformation.class);
-        //Products product=new Products(1199);
-        StorePage storePage =new HomePage(getDriver()).load()
+        StorePage storePage = new HomePage(getDriver()).load()
 
                 .ClickstoreMenuPage();
         storePage.pageLoaded();
 
         storePage.search("Bracelet");
 
-        Assert.assertEquals( storePage.gettitle(),"Search results: “Bracelet”");
+        Assert.assertEquals(storePage.gettitle(), "Search results: “Bracelet”");
         //Assert.assertTrue(storePage.gettitle().contains("Search results") );
         storePage.addToCart("Boho Bangle Bracelet");
         // Thread.sleep(5000); //------added Implicit Wait in driver manager
-        cartPage cartpage=storePage.viewCart();
+        cartPage cartpage = storePage.viewCart();
 
-        Assert.assertEquals( cartpage.checkCartProduct(),"Boho Bangle Bracelet" );
-        checkoutPage checkoutpage=  cartpage.checkoutMethod();
-        loginPage loginpage= checkoutpage.login();
-        loginpage.clikLogin("ank2557","xain@34567568");
+        Assert.assertEquals(cartpage.checkCartProduct(), "Boho Bangle Bracelet");
+        checkoutPage checkoutpage = cartpage.checkoutMethod();
+        loginPage loginpage = checkoutpage.login();
+        loginpage.clikLogin("ank2557", "xain@34567568");
 //Thread.sleep(5000);
         checkoutpage.setBillinginformation(billinginformation);
         // Thread.sleep(5000); //------added Implicit Wait in driver manager
         checkoutpage.setPlaceOrder();
         // Thread.sleep(5000); //------added Implicit Wait in driver manager
-        Assert.assertEquals(checkoutpage.setTextValidation(),"Thank you. Your order has been received.");
-
-
-
-
-
+        Assert.assertEquals(checkoutpage.setTextValidation(), "Thank you. Your order has been received.");
 
 
     }
 
 
+    //@Test
+    public void CheckoutDirectBankAccountTransfer2() throws IOException {
 
+
+        Billinginformation billinginformation = JacksonUtils.Fileloader("SamppleDataFile.json", Billinginformation.class);
+        //Products product=new Products(1199);
+        StorePage storePage = new HomePage(getDriver()).load()
+
+                .ClickstoreMenuPage();
+        storePage.pageLoaded();
+
+        storePage.search("Bracelet");
+
+        Assert.assertEquals(storePage.gettitle(), "Search results: “Bracelet”");
+        //Assert.assertTrue(storePage.gettitle().contains("Search results") );
+        storePage.addToCart("Boho Bangle Bracelet");
+        // Thread.sleep(5000); //------added Implicit Wait in driver manager
+        cartPage cartpage = storePage.viewCart();
+
+        Assert.assertEquals(cartpage.checkCartProduct(), "Boho Bangle Bracelet");
+        checkoutPage checkoutpage = cartpage.checkoutMethod();
+        loginPage loginpage = checkoutpage.login();
+        loginpage.clikLogin("ank2557", "xain@34567568");
+//Thread.sleep(5000);
+        checkoutpage.setBillinginformation(billinginformation);
+        // Thread.sleep(5000); //------added Implicit Wait in driver manager
+        checkoutpage.setPlaceOrder();
+        // Thread.sleep(5000); //------added Implicit Wait in driver manager
+        Assert.assertEquals(checkoutpage.setTextValidation(), "Thank you. Your order has been received.");
+
+
+    }
 
 
 }

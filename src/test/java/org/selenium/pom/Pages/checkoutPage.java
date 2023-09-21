@@ -19,53 +19,44 @@ import java.util.List;
 import static org.openqa.selenium.support.ui.ExpectedConditions.elementToBeClickable;
 import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOfAllElements;
 
-public class checkoutPage extends BasePage
-
-
-{
-    public checkoutPage(WebDriver driver)
-    {
+public class checkoutPage extends BasePage {
+    public checkoutPage(WebDriver driver) {
         super(driver);
     }
 
-    private  final  By cartPage=By.cssSelector(".has-text-align-center");
-    private final   By firstName= By.cssSelector("#billing_first_name");
-    private final   By lastName= By.cssSelector("#billing_last_name");
-    private final   By billingCompany= By.cssSelector("#billing_company");
-    private final   By billiingAddress1= By.cssSelector("#billing_address_1");
-    private final   By billiingCity= By.cssSelector("#billing_city");
-    private final   By billingPostcode= By.cssSelector("#billing_postcode");
-    private final   By billingEmail= By.cssSelector("#billing_email");
-    private final   By textValidation= By.cssSelector(".woocommerce-notice");
-    private  final  By placeOrder=By.cssSelector("[name='woocommerce_checkout_place_order'][id='place_order']");
-    private final   By loginbtn= By.cssSelector(".showlogin");
-    private final   By directBankTrasnferBttn=By.id("payment_method_bacs");
+    private final By cartPage = By.cssSelector(".has-text-align-center");
+    private final By firstName = By.cssSelector("#billing_first_name");
+    private final By lastName = By.cssSelector("#billing_last_name");
+    private final By billingCompany = By.cssSelector("#billing_company");
+    private final By billiingAddress1 = By.cssSelector("#billing_address_1");
+    private final By billiingCity = By.cssSelector("#billing_city");
+    private final By billingPostcode = By.cssSelector("#billing_postcode");
+    private final By billingEmail = By.cssSelector("#billing_email");
+    private final By textValidation = By.cssSelector(".woocommerce-notice");
+    private final By placeOrder = By.cssSelector("[name='woocommerce_checkout_place_order'][id='place_order']");
+    private final By loginbtn = By.cssSelector(".showlogin");
+    private final By directBankTrasnferBttn = By.id("payment_method_bacs");
     //private  final By CountryDropDown =By.cssSelector("label[for='billing_country']");
-   private  final By CountryDropDown = By.id("billing_country");
-    private final By StateDropDown=By.id("[id='billing_state']");
-    private  final  By  overlay=By.cssSelector(".blockUI.blockOverlay");
-  //  private final By overlay= By.cssSelector("[class='blockUI']");
+    private final By CountryDropDown = By.id("billing_country");
+    private final By StateDropDown = By.id("[id='billing_state']");
+    private final By overlay = By.cssSelector(".blockUI.blockOverlay");
+    //  private final By overlay= By.cssSelector("[class='blockUI']");
 
 
-
-
-
-    public checkoutPage setFirstName(String fname)
-    {
+    public checkoutPage setFirstName(String fname) {
 
         webElementToBeVisible(firstName);
-        WebElement e= waitShort.until(ExpectedConditions.visibilityOfElementLocated(firstName));
- e.clear();
- e.click();
- e.sendKeys(fname);
-     //   driver.findElement(firstName).click();
-       // driver.findElement(firstName).sendKeys(fname);
-     return this;
+        WebElement e = waitShort.until(ExpectedConditions.visibilityOfElementLocated(firstName));
+        e.clear();
+        e.click();
+        e.sendKeys(fname);
+        //   driver.findElement(firstName).click();
+        // driver.findElement(firstName).sendKeys(fname);
+        return this;
     }
 
 
-    public checkoutPage setLastName(String lname)
-    {
+    public checkoutPage setLastName(String lname) {
         driver.findElement(lastName).clear();
         driver.findElement(lastName).click();
         driver.findElement(lastName).sendKeys(lname);
@@ -73,22 +64,19 @@ public class checkoutPage extends BasePage
     }
 
 
-    public checkoutPage setCompany(String company)
-    {
+    public checkoutPage setCompany(String company) {
         driver.findElement(billingCompany).clear();
         driver.findElement(billingCompany).sendKeys(company);
         return this;
     }
 
-    public checkoutPage setBilliingAddress1(String address1)
-    {
+    public checkoutPage setBilliingAddress1(String address1) {
         driver.findElement(billiingAddress1).clear();
         driver.findElement(billiingAddress1).sendKeys(address1);
         return this;
     }
 
-public checkoutPage setCountry(String CountryName)
-{
+    public checkoutPage setCountry(String CountryName) {
 
 
 
@@ -103,12 +91,12 @@ for (WebElement a:options)
 }*/     //------This is Code is valid for Chrome Driver and Browser
 
 ///---------Below is Alternate code for FireFox Driver as there i Bug raised for fire Fox Driver---------//
-    By CountrydropDown =By.id("select2-billing_country-container");
-    webElementToBeClickable(CountrydropDown).click();
-    WebElement elem =waitShort.until(ExpectedConditions.elementToBeClickable(By.xpath("//li[text()='"+CountryName+"']")));
-    ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);",elem);
-    elem.click();
-    return this;
+        By CountrydropDown = By.id("select2-billing_country-container");
+        webElementToBeClickable(CountrydropDown).click();
+        WebElement elem = waitShort.until(ExpectedConditions.elementToBeClickable(By.xpath("//li[text()='" + CountryName + "']")));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", elem);
+        elem.click();
+        return this;
 
 /*
     select.selectByVisibleText(CountryName);
@@ -129,10 +117,9 @@ select.selectByVisibleText(CountryName);
     dropDownMenu.select_by_visible_text('Professional')
     select.selectByVisibleText(CountryName);*/
 
-}
+    }
 
-public checkoutPage setState(String StateName)
-{
+    public checkoutPage setState(String StateName) {
    /* Select select=new Select(driver.findElement(StateDropDown));
 
     select.selectByVisibleText(StateName);
@@ -140,71 +127,61 @@ public checkoutPage setState(String StateName)
 
 
 ///---------Below is Alternate code for FireFox Driver as there i Bug raised for fire Fox Driver---------//
-    By CountrydropDown =By.id("select2-billing_state-container");
-    webElementToBeClickable(CountrydropDown).click();
-    WebElement elem =waitShort.until(ExpectedConditions.elementToBeClickable(By.xpath("//li[text()='"+StateName+"']")));
-    ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);",elem);
-    elem.click();
-    return this;
+        By CountrydropDown = By.id("select2-billing_state-container");
+        webElementToBeClickable(CountrydropDown).click();
+        WebElement elem = waitShort.until(ExpectedConditions.elementToBeClickable(By.xpath("//li[text()='" + StateName + "']")));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", elem);
+        elem.click();
+        return this;
 
 
-}
+    }
 
 
-
-    public checkoutPage setBilliingCity(String city)
-    {
+    public checkoutPage setBilliingCity(String city) {
 
         driver.findElement(billiingCity).clear();
         driver.findElement(billiingCity).sendKeys(city);
         return this;
     }
 
-    public checkoutPage setBillingPostcode(String postcode)
-    {
+    public checkoutPage setBillingPostcode(String postcode) {
 
         driver.findElement(billingPostcode).clear();
         driver.findElement(billingPostcode).sendKeys(postcode);
         return this;
     }
 
-    public checkoutPage setbillingEmail(String email)
-    {
+    public checkoutPage setbillingEmail(String email) {
         driver.findElement(billingEmail).clear();
         driver.findElement(billingEmail).sendKeys(email);
         return this;
     }
 
 
-      public checkoutPage setBillinginformation( Billinginformation billinginformation)
-      {
+    public checkoutPage setBillinginformation(Billinginformation billinginformation) {
 
-           setFirstName(billinginformation.getFirstname()).
-                  setLastName(billinginformation.getLastname()).
-                  setCompany(billinginformation.getCompany()).
-                  setCountry(billinginformation.getCountryName()).
-                  setBilliingAddress1(billinginformation.getAddressLineone()).
-                  setBilliingCity(billinginformation.getCity()).
-                  setState(billinginformation.getStateName()).
-                  setBillingPostcode(billinginformation.getPostcode()).
-          setbillingEmail(billinginformation.getEmail());
-
+        setFirstName(billinginformation.getFirstname()).
+                setLastName(billinginformation.getLastname()).
+                setCompany(billinginformation.getCompany()).
+                setCountry(billinginformation.getCountryName()).
+                setBilliingAddress1(billinginformation.getAddressLineone()).
+                setBilliingCity(billinginformation.getCity()).
+                setState(billinginformation.getStateName()).
+                setBillingPostcode(billinginformation.getPostcode()).
+                setbillingEmail(billinginformation.getEmail());
 
 
+        return this;
+    }
 
-
-
-          return this;
-      }
-
-    public checkoutPage  setPlaceOrder()
-    {
+    public checkoutPage setPlaceOrder() {
 
         //waitShort.until(ExpectedConditions.visibilityOfElementLocated(billingPostcode));
 
-       waitForOverlaytoDisappear(overlay);
+        waitForOverlaytoDisappear(overlay);
 
-      //  waitShort.until(ExpectedConditions.invisibilityOfAllElements((WebElement) overlay));
+        //  waitShort.until(ExpectedConditions.invisibilityOfAllElements((WebElement) overlay));
         driver.findElement(By.cssSelector(".wp-block-group.alignfull")).click();
         //waitLong.until(ExpectedConditions.elementToBeClickable(placeOrder)).click();
         driver.findElement(placeOrder).click();
@@ -212,47 +189,37 @@ public checkoutPage setState(String StateName)
     }
 
 
-    public checkoutPage DirectBankTransfer(By directBankTrasnferBttn)
-    {
-       WebElement element =waitShort.until(ExpectedConditions.visibilityOfElementLocated(directBankTrasnferBttn));
-       if (!element.isSelected())
-       {
-           element.click();
-       }
+    public checkoutPage DirectBankTransfer(By directBankTrasnferBttn) {
+        WebElement element = waitShort.until(ExpectedConditions.visibilityOfElementLocated(directBankTrasnferBttn));
+        if (!element.isSelected()) {
+            element.click();
+        }
 
-        return  this;
+        return this;
 
     }
 
-    public  boolean PagedLoaded()
-    {
+    public boolean PagedLoaded() {
 
 
-        return  waitShort.until(ExpectedConditions.textToBe(cartPage,"Cart"));
+        return waitShort.until(ExpectedConditions.textToBe(cartPage, "Cart"));
 
     }
 
 
-
-    public String  setTextValidation()
-    {
-       return webElementToBeVisible(textValidation).getText();
-      //  return driver.findElement(textValidation).getText();
+    public String setTextValidation() {
+        return webElementToBeVisible(textValidation).getText();
+        //  return driver.findElement(textValidation).getText();
     }
 
-    public  loginPage login()
-    {
+    public loginPage login() {
 
 
-      //  System.out.println("ovelays objects are null ");
+        //  System.out.println("ovelays objects are null ");
         webElementToBeClickable(loginbtn);
         driver.findElement(loginbtn).click();
         return new loginPage(driver);
     }
-
-
-
-
 
 
 }

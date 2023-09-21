@@ -1,1 +1,61 @@
-{"uuid":"ae5ac60d-8e2f-4c33-8f5c-7277e4b78ab6","historyId":"9dba30b165812db74a44fadef6adb69d","fullName":"org.selenium.pom.tests.Test2.DropDown","labels":[{"name":"package","value":"org.selenium.pom.tests.Test2"},{"name":"testClass","value":"org.selenium.pom.tests.Test2"},{"name":"testMethod","value":"DropDown"},{"name":"parentSuite","value":"Default Suite"},{"name":"suite","value":"SeleniumFramework"},{"name":"subSuite","value":"org.selenium.pom.tests.Test2"},{"name":"host","value":"Ankits-MacBook-Pro.local"},{"name":"thread","value":"80850@Ankits-MacBook-Pro.local.main(1)"},{"name":"framework","value":"testng"},{"name":"language","value":"java"}],"links":[],"name":"DropDown","status":"passed","statusDetails":{"known":false,"muted":false,"flaky":false},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1686196167505,"stop":1686196169695}
+{
+  "uuid": "ae5ac60d-8e2f-4c33-8f5c-7277e4b78ab6",
+  "historyId": "9dba30b165812db74a44fadef6adb69d",
+  "fullName": "org.selenium.pom.tests.Test2.DropDown",
+  "labels": [
+    {
+      "name": "package",
+      "value": "org.selenium.pom.tests.Test2"
+    },
+    {
+      "name": "testClass",
+      "value": "org.selenium.pom.tests.Test2"
+    },
+    {
+      "name": "testMethod",
+      "value": "DropDown"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Default Suite"
+    },
+    {
+      "name": "suite",
+      "value": "SeleniumFramework"
+    },
+    {
+      "name": "subSuite",
+      "value": "org.selenium.pom.tests.Test2"
+    },
+    {
+      "name": "host",
+      "value": "Ankits-MacBook-Pro.local"
+    },
+    {
+      "name": "thread",
+      "value": "80850@Ankits-MacBook-Pro.local.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    }
+  ],
+  "links": [],
+  "name": "DropDown",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1686196167505,
+  "stop": 1686196169695
+}

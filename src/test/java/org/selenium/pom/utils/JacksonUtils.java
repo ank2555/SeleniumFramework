@@ -10,10 +10,10 @@ import java.io.InputStream;
 public class JacksonUtils {
 
 
-    public static <T> T Fileloader(String File,Class<T> T) throws IOException {
-        InputStream  is= JacksonUtils.class.getClassLoader().getResourceAsStream(File);
-        ObjectMapper objectMapper=new ObjectMapper();
-      return  objectMapper.readValue(is,T);
+    public static <T> T Fileloader(String File, Class<T> T) throws IOException {
+        InputStream is = JacksonUtils.class.getClassLoader().getResourceAsStream(File);
+        ObjectMapper objectMapper = new ObjectMapper();
+        return objectMapper.readValue(is, T);
 
     }
 

@@ -1,0 +1,63 @@
+{
+  "uuid": "dc7d5e1c-cb27-4454-8552-eb2ef50fc17a",
+  "historyId": "eedc7ca8e0bb4379945185085c1a2fb1",
+  "fullName": "org.selenium.pom.tests.IRCTC.loginAccount",
+  "labels": [
+    {
+      "name": "package",
+      "value": "org.selenium.pom.tests.IRCTC"
+    },
+    {
+      "name": "testClass",
+      "value": "org.selenium.pom.tests.IRCTC"
+    },
+    {
+      "name": "testMethod",
+      "value": "loginAccount"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Default Suite"
+    },
+    {
+      "name": "suite",
+      "value": "SeleniumFramework"
+    },
+    {
+      "name": "subSuite",
+      "value": "org.selenium.pom.tests.IRCTC"
+    },
+    {
+      "name": "host",
+      "value": "Ankits-MacBook-Pro.local"
+    },
+    {
+      "name": "thread",
+      "value": "17825@Ankits-MacBook-Pro.local.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    }
+  ],
+  "links": [],
+  "name": "loginAccount",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "element click intercepted: Element <input _ngcontent-qph-c53=\"\" type=\"text\" formcontrolname=\"userid\" class=\"form-control input-box ng-untouched ng-pristine ng-valid\" id=\"9996152\" placeholder=\"User Name\" autofocus=\"\"> is not clickable at point (491, 294). Other element would receive the click: <div _ngcontent-qph-c53=\"\" class=\"dimmer\"></div>\n  (Session info: chrome=116.0.5845.187)\nBuild info: version: '4.12.1', revision: '8e34639b11'\nSystem info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.0', java.version: '18.0.2'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [941c1b811e1aa2dc344f8cf76de63131, clickElement {id=DC8F12296EADCE296055468A421920AC_element_451}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.187, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: /var/folders/wy/gkpljqns5l9...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57872}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:57872/devtoo..., se:cdpVersion: 116.0.5845.187, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on mac (941c1b811e1aa2dc344f8cf76de63131)] -> css selector: input[formcontrolname='userid'][placeholder='User Name']]\nSession ID: 941c1b811e1aa2dc344f8cf76de63131",
+    "trace": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input _ngcontent-qph-c53=\"\" type=\"text\" formcontrolname=\"userid\" class=\"form-control input-box ng-untouched ng-pristine ng-valid\" id=\"9996152\" placeholder=\"User Name\" autofocus=\"\"> is not clickable at point (491, 294). Other element would receive the click: <div _ngcontent-qph-c53=\"\" class=\"dimmer\"></div>\n  (Session info: chrome=116.0.5845.187)\nBuild info: version: '4.12.1', revision: '8e34639b11'\nSystem info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.0', java.version: '18.0.2'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [941c1b811e1aa2dc344f8cf76de63131, clickElement {id=DC8F12296EADCE296055468A421920AC_element_451}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.187, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: /var/folders/wy/gkpljqns5l9...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57872}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:57872/devtoo..., se:cdpVersion: 116.0.5845.187, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on mac (941c1b811e1aa2dc344f8cf76de63131)] -> css selector: input[formcontrolname='userid'][placeholder='User Name']]\nSession ID: 941c1b811e1aa2dc344f8cf76de63131\n\tat java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)\n\tat org.selenium.pom.tests.IRCTC.loginAccount(IRCTC.java:55)\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:577)\n\tat org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)\n\tat org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)\n\tat org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)\n\tat org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)\n\tat org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)\n\tat org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)\n\tat org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)\n\tat org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\n\tat org.testng.TestRunner.privateRun(TestRunner.java:829)\n\tat org.testng.TestRunner.run(TestRunner.java:602)\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:437)\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:330)\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1176)\n\tat org.testng.TestNG.runSuites(TestNG.java:1099)\n\tat org.testng.TestNG.run(TestNG.java:1067)\n\tat com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)\n\tat com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)\n"
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1694797024429,
+  "stop": 1694797032705
+}

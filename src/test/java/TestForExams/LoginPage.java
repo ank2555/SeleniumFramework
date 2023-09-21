@@ -1,10 +1,13 @@
 package TestForExams;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
 import static org.junit.Assert.*;
+
 public class LoginPage {
 
 /*
@@ -134,63 +137,45 @@ public void  driverinitialization()
 */
 
 
-String Product="";
-String P2=null;
+    String Product = "";
+    String P2 = null;
 
-String P3="a";
+    String P3 = "a";
 
     @Test
     public String shouldInvert(String FName) {
-      // this.FName=FName;
-      //  assertNull(FName);
+        // this.FName=FName;
+        //  assertNull(FName);
         return FName;
-
-
-
 
 
     }
 
     @Test
-    public String  NullMthod (String P2)
-
-    {
+    public String NullMthod(String P2) {
         assertNull(P2);
-       P2="";
+        P2 = "";
         return P2;
 
 
     }
 
     @Test
-    public String  SingleChar (String P3)
+    public String SingleChar(String P3) {
 
-    {
-
-        String temp="";
+        String temp = "";
         //assertNull(P2);
-  char [] line=P3.toCharArray();
+        char[] line = P3.toCharArray();
 
-  for ( int i=0;i<P3.length();i++)
-  {
-      if ( line.length==1)
-      {
-          temp=P3;
-      }
-  }
+        for (int i = 0; i < P3.length(); i++) {
+            if (line.length == 1) {
+                temp = P3;
+            }
+        }
 
-return  temp;
+        return temp;
 
     }
-
-
-
-
-
-
-
-
-
 
 
 }

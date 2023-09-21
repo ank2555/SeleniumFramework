@@ -1,1 +1,61 @@
-{"uuid":"4c115b17-66b9-4993-aadc-405a78b990ff","historyId":"a363312eaa640ef1e50a423127748264","fullName":"org.selenium.pom.tests.myFirstTest.CheckoutDirectBankAccountTransfer","labels":[{"name":"package","value":"org.selenium.pom.tests.myFirstTest"},{"name":"testClass","value":"org.selenium.pom.tests.myFirstTest"},{"name":"testMethod","value":"CheckoutDirectBankAccountTransfer"},{"name":"parentSuite","value":"Default Suite"},{"name":"suite","value":"SeleniumFramework"},{"name":"subSuite","value":"org.selenium.pom.tests.myFirstTest"},{"name":"host","value":"Ankits-MBP"},{"name":"thread","value":"5739@Ankits-MBP.main(1)"},{"name":"framework","value":"testng"},{"name":"language","value":"java"}],"links":[],"name":"CheckoutDirectBankAccountTransfer","status":"passed","statusDetails":{"known":false,"muted":false,"flaky":false},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1679767143938,"stop":1679767158622}
+{
+  "uuid": "4c115b17-66b9-4993-aadc-405a78b990ff",
+  "historyId": "a363312eaa640ef1e50a423127748264",
+  "fullName": "org.selenium.pom.tests.myFirstTest.CheckoutDirectBankAccountTransfer",
+  "labels": [
+    {
+      "name": "package",
+      "value": "org.selenium.pom.tests.myFirstTest"
+    },
+    {
+      "name": "testClass",
+      "value": "org.selenium.pom.tests.myFirstTest"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckoutDirectBankAccountTransfer"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Default Suite"
+    },
+    {
+      "name": "suite",
+      "value": "SeleniumFramework"
+    },
+    {
+      "name": "subSuite",
+      "value": "org.selenium.pom.tests.myFirstTest"
+    },
+    {
+      "name": "host",
+      "value": "Ankits-MBP"
+    },
+    {
+      "name": "thread",
+      "value": "5739@Ankits-MBP.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    }
+  ],
+  "links": [],
+  "name": "CheckoutDirectBankAccountTransfer",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1679767143938,
+  "stop": 1679767158622
+}

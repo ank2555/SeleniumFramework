@@ -1,1 +1,61 @@
-{"uuid":"ab088d5d-f8fb-4ce4-a604-86769d6b457f","historyId":"82ed2768a0906e1270922b2a49c2aa2b","fullName":"org.selenium.pom.tests.Test2.Test1","labels":[{"name":"package","value":"org.selenium.pom.tests.Test2"},{"name":"testClass","value":"org.selenium.pom.tests.Test2"},{"name":"testMethod","value":"Test1"},{"name":"parentSuite","value":"Default Suite"},{"name":"suite","value":"SeleniumFramework"},{"name":"subSuite","value":"org.selenium.pom.tests.Test2"},{"name":"host","value":"Ankits-MBP"},{"name":"thread","value":"7968@Ankits-MBP.main(1)"},{"name":"framework","value":"testng"},{"name":"language","value":"java"}],"links":[],"name":"Test1","status":"passed","statusDetails":{"known":false,"muted":false,"flaky":false},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1679771266130,"stop":1679771268419}
+{
+  "uuid": "ab088d5d-f8fb-4ce4-a604-86769d6b457f",
+  "historyId": "82ed2768a0906e1270922b2a49c2aa2b",
+  "fullName": "org.selenium.pom.tests.Test2.Test1",
+  "labels": [
+    {
+      "name": "package",
+      "value": "org.selenium.pom.tests.Test2"
+    },
+    {
+      "name": "testClass",
+      "value": "org.selenium.pom.tests.Test2"
+    },
+    {
+      "name": "testMethod",
+      "value": "Test1"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Default Suite"
+    },
+    {
+      "name": "suite",
+      "value": "SeleniumFramework"
+    },
+    {
+      "name": "subSuite",
+      "value": "org.selenium.pom.tests.Test2"
+    },
+    {
+      "name": "host",
+      "value": "Ankits-MBP"
+    },
+    {
+      "name": "thread",
+      "value": "7968@Ankits-MBP.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    }
+  ],
+  "links": [],
+  "name": "Test1",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1679771266130,
+  "stop": 1679771268419
+}

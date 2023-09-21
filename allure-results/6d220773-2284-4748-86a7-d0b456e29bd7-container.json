@@ -1,0 +1,11 @@
+{
+  "uuid": "6d220773-2284-4748-86a7-d0b456e29bd7",
+  "name": "SeleniumFramework",
+  "children": [
+    "d58e0b9a-65e8-4a88-a7bb-d402dc46ecba"
+  ],
+  "befores": [],
+  "afters": [],
+  "start": 1694796850652,
+  "stop": 1694796883370
+}

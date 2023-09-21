@@ -1,1 +1,61 @@
-{"uuid":"834534fb-43a8-4166-b893-6e143413fc86","historyId":"39d55c1ffb3ea5ef979f18bb62cca734","fullName":"org.selenium.pom.tests.Test2.SwitchWindows","labels":[{"name":"package","value":"org.selenium.pom.tests.Test2"},{"name":"testClass","value":"org.selenium.pom.tests.Test2"},{"name":"testMethod","value":"SwitchWindows"},{"name":"parentSuite","value":"Default Suite"},{"name":"suite","value":"SeleniumFramework"},{"name":"subSuite","value":"org.selenium.pom.tests.Test2"},{"name":"host","value":"Ankits-MBP"},{"name":"thread","value":"9984@Ankits-MBP.main(1)"},{"name":"framework","value":"testng"},{"name":"language","value":"java"}],"links":[],"name":"SwitchWindows","status":"passed","statusDetails":{"known":false,"muted":false,"flaky":false},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1679785026974,"stop":1679785031588}
+{
+  "uuid": "834534fb-43a8-4166-b893-6e143413fc86",
+  "historyId": "39d55c1ffb3ea5ef979f18bb62cca734",
+  "fullName": "org.selenium.pom.tests.Test2.SwitchWindows",
+  "labels": [
+    {
+      "name": "package",
+      "value": "org.selenium.pom.tests.Test2"
+    },
+    {
+      "name": "testClass",
+      "value": "org.selenium.pom.tests.Test2"
+    },
+    {
+      "name": "testMethod",
+      "value": "SwitchWindows"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Default Suite"
+    },
+    {
+      "name": "suite",
+      "value": "SeleniumFramework"
+    },
+    {
+      "name": "subSuite",
+      "value": "org.selenium.pom.tests.Test2"
+    },
+    {
+      "name": "host",
+      "value": "Ankits-MBP"
+    },
+    {
+      "name": "thread",
+      "value": "9984@Ankits-MBP.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    }
+  ],
+  "links": [],
+  "name": "SwitchWindows",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1679785026974,
+  "stop": 1679785031588
+}

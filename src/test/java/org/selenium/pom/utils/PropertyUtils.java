@@ -8,21 +8,15 @@ public class PropertyUtils {
     private static java.util.Properties properties;
 
 
+    public static Properties GetProperties(String FIlePath) {
+        try {
 
-    public static Properties GetProperties (String FIlePath )
-    {
-try {
-
-    FileInputStream fileInputStream = new FileInputStream(FIlePath);
-    properties = new java.util.Properties();
-    return properties;
+            FileInputStream fileInputStream = new FileInputStream(FIlePath);
+            properties = new java.util.Properties();
+            return properties;
 
 
-
-}
-
-catch(IOException exception)
-        {
+        } catch (IOException exception) {
             exception.printStackTrace();
         }
 

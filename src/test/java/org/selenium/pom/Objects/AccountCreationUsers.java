@@ -1,27 +1,20 @@
 package org.selenium.pom.Objects;
 
 public class AccountCreationUsers {
-    private String  username ;
-    private  String Password;
-    private String Email ;
+    private String username;
+    private String Password;
+    private String Email;
 
 
-    public AccountCreationUsers()
-    {
+    public AccountCreationUsers() {
 
     }
 
-    public AccountCreationUsers(String username,String password, String email)
-
-    {
-      this.username=username;
-      this.Password=password;
-      this.Email=email;
+    public AccountCreationUsers(String username, String password, String email) {
+        this.username = username;
+        this.Password = password;
+        this.Email = email;
     }
-
-
-
-
 
 
     public String getUsername() {
@@ -30,7 +23,7 @@ public class AccountCreationUsers {
 
     public AccountCreationUsers setUsername(String username) {
         this.username = username;
-        return  this;
+        return this;
     }
 
     public String getPassword() {
@@ -50,8 +43,6 @@ public class AccountCreationUsers {
         Email = email;
         return this;
     }
-
-
 
 
 }

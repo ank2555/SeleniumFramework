@@ -1,1 +1,12 @@
-{"uuid":"55310db8-4e4d-4c5c-9803-8688b2e7f347","name":"org.selenium.pom.tests.myFirstTest","children":["87345eb2-20f5-4e73-8681-e4db15e3bb77","557b8ed6-e7bf-457c-8a10-e749e5bbda9d"],"befores":[],"afters":[],"start":1679766727146,"stop":1679766727316}
+{
+  "uuid": "55310db8-4e4d-4c5c-9803-8688b2e7f347",
+  "name": "org.selenium.pom.tests.myFirstTest",
+  "children": [
+    "87345eb2-20f5-4e73-8681-e4db15e3bb77",
+    "557b8ed6-e7bf-457c-8a10-e749e5bbda9d"
+  ],
+  "befores": [],
+  "afters": [],
+  "start": 1679766727146,
+  "stop": 1679766727316
+}

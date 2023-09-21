@@ -389,12 +389,12 @@ public class Test2 extends BaseTest {
     public void alert() {
 
         new BasePage(getDriver()).loadpage("/");
-        driver=getDriver();
+        driver = getDriver();
 
         driver.findElement(By.xpath("//input[@id='alert1']")).click();
-      Alert alert=  driver.switchTo().alert();
+        Alert alert = driver.switchTo().alert();
         System.out.println(alert.getText());
-    // alert.accept();
+        // alert.accept();
         alert.dismiss();
 
     }
@@ -403,10 +403,10 @@ public class Test2 extends BaseTest {
     public void alert_sendkeys() {
 
         new BasePage(getDriver()).loadpage("/");
-        driver=getDriver();
+        driver = getDriver();
 
         driver.findElement(By.xpath("//input[@id='prompt']")).click();
-        Alert alert=  driver.switchTo().alert();
+        Alert alert = driver.switchTo().alert();
         System.out.println(alert.getText());
         // alert.accept();
         alert.sendKeys("Ankit");
@@ -415,47 +415,43 @@ public class Test2 extends BaseTest {
     }
 
 
-
     @Test
     public void Invisibilyt_elelement() {
 
         new BasePage(getDriver()).loadpage("/");
-        driver=getDriver();
+        driver = getDriver();
 
-    //    driver.findElement(By.xpath("//div[@id='deletesuccess']")).click();;
-WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(26));
+        //    driver.findElement(By.xpath("//div[@id='deletesuccess']")).click();;
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(26));
         wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//div[@id='deletesuccess']")));
         driver.findElement(By.xpath("//input[@id='alert2']")).click();
 
-        Alert alert=  driver.switchTo().alert();
+        Alert alert = driver.switchTo().alert();
         System.out.println(alert.getText());
         // alert.accept();
-       // alert.sendKeys("Ankit");
+        // alert.sendKeys("Ankit");
         alert.accept();
 
     }
 
 
-
     @Test
-    public  void elementtoBeClickable()
-    {
+    public void elementtoBeClickable() {
         new BasePage(getDriver()).loadpage("/");
-        driver=getDriver();
+        driver = getDriver();
 
         driver.findElement(By.xpath("//button[normalize-space()='Check this']")).click();
-        WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(10));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='dte']"))).click();
-       // driver.switchTo().alert().accept();
+        // driver.switchTo().alert().accept();
 
     }
 
     @Test
-    public  void implicitWait()
-    {
+    public void implicitWait() {
         new BasePage(getDriver()).loadpage("/");
-        driver=getDriver();
-driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        driver = getDriver();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.findElement(By.className("dropbtn")).click();
         driver.findElement(By.cssSelector("a[href='http://facebook.com']")).click();
 
@@ -463,27 +459,23 @@ driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
 
     @Test
-    public  void DropDown()
-    {
+    public void DropDown() {
         new BasePage(getDriver()).loadpage("/");
-        driver=getDriver();
-   WebElement dropDown=  driver.findElement(By.id("multiselect1"));
-        Select select=new Select(dropDown);
+        driver = getDriver();
+        WebElement dropDown = driver.findElement(By.id("multiselect1"));
+        Select select = new Select(dropDown);
         System.out.println(select.isMultiple());
-
 
 
     }
 
 
-
     @Test
-    public  void getAllSelectedOptions()
-    {
+    public void getAllSelectedOptions() {
         new BasePage(getDriver()).loadpage("/");
-        driver=getDriver();
-        WebElement Multiselect =  driver.findElement(By.id("multiselect1"));
-        Select select=new Select(Multiselect);
+        driver = getDriver();
+        WebElement Multiselect = driver.findElement(By.id("multiselect1"));
+        Select select = new Select(Multiselect);
 
         select.selectByVisibleText("Volvo");
         select.selectByVisibleText("Hyundai");
@@ -492,21 +484,16 @@ driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         List<WebElement> selectedoption = select.getAllSelectedOptions();
 
 
-
-        for (WebElement selectvalue:selectedoption)
-        {
+        for (WebElement selectvalue : selectedoption) {
             System.out.println(selectvalue.getText());
         }
-
-
-
 
 
     }
 
 
     @Test
-    public  void DeSelection() {
+    public void DeSelection() {
         new BasePage(getDriver()).loadpage("/");
         driver = getDriver();
         WebElement Multiselect = driver.findElement(By.id("multiselect1"));
@@ -526,48 +513,62 @@ driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
 
     @Test
-    public  void Frame() {
+    public void Frame() {
         new BasePage(getDriver()).loadpage("/");
         driver = getDriver();
-WebElement frame=driver.findElement(By.id("iframe2"));
+        WebElement frame = driver.findElement(By.id("iframe2"));
 
-driver.switchTo().frame(frame);
+        driver.switchTo().frame(frame);
 
-driver.findElement(By.id("Chapter3")).click();
+        driver.findElement(By.id("Chapter3")).click();
 
     }
-
-
-
-
-
-
-
-@Test
-public  void DragenDropBy() {
-        new BasePage(getDriver()).loadpage("/p/page3.html");
-        driver = getDriver();
-     WebElement priceoption=  driver.findElement(By.cssSelector("a[class='ui-slider-handle ui-btn ui-shadow ui-btn-null']"));
-     Actions actions=new Actions(driver);
-
-     actions.dragAndDropBy(priceoption,200,0).build().perform();
-
-        }
-
-
-
 
 
     @Test
-    public  void DragenDrop() {
+    public void DragenDropBy() {
+        new BasePage(getDriver()).loadpage("/p/page3.html");
+        driver = getDriver();
+        WebElement priceoption = driver.findElement(By.cssSelector("a[class='ui-slider-handle ui-btn ui-shadow ui-btn-null']"));
+        Actions actions = new Actions(driver);
+
+        actions.dragAndDropBy(priceoption, 200, 0).build().perform();
+
+    }
+
+
+    @Test
+    public void DragenDrop() {
         new BasePage(getDriver()).loadpage("html");
         driver = getDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-        WebElement Box1Source=  driver.findElement(By.id("box5"));
-        WebElement BoxTarget=driver.findElement(By.xpath("//div[@id='box103']"));
-        Actions actions=new Actions(driver);
-actions.dragAndDrop(Box1Source,BoxTarget).build().perform();
+        WebElement Box1Source = driver.findElement(By.id("box5"));
+        WebElement BoxTarget = driver.findElement(By.xpath("//div[@id='box103']"));
+        Actions actions = new Actions(driver);
+        actions.dragAndDrop(Box1Source, BoxTarget).build().perform();
 
     }
+
+
+    @Test
+    public void GetAllLinksOnGoogleSerach() {
+        new BasePage(getDriver()).loadpage("/");
+        driver = getDriver();
+        //   driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        driver.findElement(By.xpath("(//textarea[@id='APjFqb'])[1]")).sendKeys("iphone 13");
+        driver.findElement(By.xpath("(//textarea[@id='APjFqb'])[1]")).sendKeys(Keys.ENTER);
+
+        List<WebElement> elements = driver.findElements(By.tagName("#a"));
+        //System.out.println(elements);
+
+        for (WebElement a : elements) {
+
+
+            System.out.println(a.getText());
+
+        }
+
+    }
+
 
 }

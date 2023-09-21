@@ -1,1 +1,11 @@
-{"uuid":"fafea5ec-33ee-41c6-8806-aea06da70d9e","name":"org.selenium.pom.tests.Test2","children":["17022839-463b-4469-b494-ab3f12ee2b8d"],"befores":[],"afters":[],"start":1679780066764,"stop":1679780073334}
+{
+  "uuid": "fafea5ec-33ee-41c6-8806-aea06da70d9e",
+  "name": "org.selenium.pom.tests.Test2",
+  "children": [
+    "17022839-463b-4469-b494-ab3f12ee2b8d"
+  ],
+  "befores": [],
+  "afters": [],
+  "start": 1679780066764,
+  "stop": 1679780073334
+}

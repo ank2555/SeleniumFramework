@@ -1,1 +1,11 @@
-{"uuid":"a30a75b5-2907-4679-83ae-083c9fc13337","name":"SeleniumFramework","children":["c6b0cc88-635d-4ea2-843a-71441b36ce55"],"befores":[],"afters":[],"start":1679770222810,"stop":1679770232907}
+{
+  "uuid": "a30a75b5-2907-4679-83ae-083c9fc13337",
+  "name": "SeleniumFramework",
+  "children": [
+    "c6b0cc88-635d-4ea2-843a-71441b36ce55"
+  ],
+  "befores": [],
+  "afters": [],
+  "start": 1679770222810,
+  "stop": 1679770232907
+}

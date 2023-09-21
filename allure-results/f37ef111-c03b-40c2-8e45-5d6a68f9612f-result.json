@@ -1,0 +1,61 @@
+{
+  "uuid": "f37ef111-c03b-40c2-8e45-5d6a68f9612f",
+  "historyId": "eedc7ca8e0bb4379945185085c1a2fb1",
+  "fullName": "org.selenium.pom.tests.IRCTC.loginAccount",
+  "labels": [
+    {
+      "name": "package",
+      "value": "org.selenium.pom.tests.IRCTC"
+    },
+    {
+      "name": "testClass",
+      "value": "org.selenium.pom.tests.IRCTC"
+    },
+    {
+      "name": "testMethod",
+      "value": "loginAccount"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Default Suite"
+    },
+    {
+      "name": "suite",
+      "value": "SeleniumFramework"
+    },
+    {
+      "name": "subSuite",
+      "value": "org.selenium.pom.tests.IRCTC"
+    },
+    {
+      "name": "host",
+      "value": "Ankits-MacBook-Pro.local"
+    },
+    {
+      "name": "thread",
+      "value": "3693@Ankits-MacBook-Pro.local.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    }
+  ],
+  "links": [],
+  "name": "loginAccount",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1694774287987,
+  "stop": 1694774291127
+}

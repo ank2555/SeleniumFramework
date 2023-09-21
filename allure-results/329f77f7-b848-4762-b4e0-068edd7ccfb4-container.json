@@ -1,0 +1,12 @@
+{
+  "uuid": "329f77f7-b848-4762-b4e0-068edd7ccfb4",
+  "name": "org.selenium.pom.tests.IRCTC",
+  "children": [
+    "c918cb81-43a2-43e2-aba3-d496ad7615ae",
+    "0377f89a-3861-4baf-8df9-a894d61c7fe8"
+  ],
+  "befores": [],
+  "afters": [],
+  "start": 1694803189437,
+  "stop": 1694803208580
+}

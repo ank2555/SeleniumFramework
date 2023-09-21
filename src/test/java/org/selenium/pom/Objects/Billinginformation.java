@@ -13,29 +13,22 @@ public class Billinginformation {
     private String StateName;
 
 
-
-
-
-   public Billinginformation()
-    {
+    public Billinginformation() {
 
     }
 
-   public Billinginformation(String firstname,String lastname,String addressLineone , String city, String postcode, String email,String company)
-    {
+    public Billinginformation(String firstname, String lastname, String addressLineone, String city, String postcode, String email, String company) {
 
-        this.firstname=firstname;
-        this.Lastname=lastname;
-        this.addressLineone=addressLineone;
-        this.city=city;
-        this.company=company;
-        this.postcode=postcode;
-        this.email=email;
+        this.firstname = firstname;
+        this.Lastname = lastname;
+        this.addressLineone = addressLineone;
+        this.city = city;
+        this.company = company;
+        this.postcode = postcode;
+        this.email = email;
 
 
     }
-
-
 
 
     public String getFirstname() {
@@ -72,7 +65,7 @@ public class Billinginformation {
 
     public Billinginformation setCity(String city) {
         this.city = city;
-   return  this;
+        return this;
     }
 
     public String getPostcode() {
@@ -107,8 +100,8 @@ public class Billinginformation {
     }
 
     public Billinginformation setCountryName(String CountryName) {
-      this.CountryName=CountryName;
-        return this ;
+        this.CountryName = CountryName;
+        return this;
     }
 
     public String getStateName() {
@@ -117,10 +110,8 @@ public class Billinginformation {
 
     public Billinginformation setStateName(String stateName) {
         this.StateName = stateName;
-        return this ;
+        return this;
     }
-
-
 
 
 }

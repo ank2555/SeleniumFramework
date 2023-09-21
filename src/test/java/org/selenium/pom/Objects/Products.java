@@ -7,21 +7,17 @@ import java.io.IOException;
 public class Products {
 
     private int id;
-    private  String productName;
+    private String productName;
 
 
+    public Products(int id) throws IOException {
+        Products Products[] = JacksonUtils.Fileloader("Products.json", Products[].class);
 
 
-    public   Products(int id) throws IOException
-    {
-        Products Products[]=JacksonUtils.Fileloader("Products.json",Products[].class );
+        for (Products product : Products) {
 
-
-        for (Products product:Products)
-        {
-
-                this.id=product.id;
-                this.productName=product.productName;
+            this.id = product.id;
+            this.productName = product.productName;
 
         }
     }
@@ -42,10 +38,6 @@ public class Products {
     public void setProductName(String productName) {
         this.productName = productName;
     }
-
-
-
-
 
 
 }

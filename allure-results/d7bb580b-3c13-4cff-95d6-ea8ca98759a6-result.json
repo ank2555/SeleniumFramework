@@ -1,0 +1,61 @@
+{
+  "uuid": "d7bb580b-3c13-4cff-95d6-ea8ca98759a6",
+  "historyId": "a575b508dc46d653b4d9ced303132379",
+  "fullName": "org.selenium.pom.tests.IRCTC.selectStation",
+  "labels": [
+    {
+      "name": "package",
+      "value": "org.selenium.pom.tests.IRCTC"
+    },
+    {
+      "name": "testClass",
+      "value": "org.selenium.pom.tests.IRCTC"
+    },
+    {
+      "name": "testMethod",
+      "value": "selectStation"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Default Suite"
+    },
+    {
+      "name": "suite",
+      "value": "SeleniumFramework"
+    },
+    {
+      "name": "subSuite",
+      "value": "org.selenium.pom.tests.IRCTC"
+    },
+    {
+      "name": "host",
+      "value": "Ankits-MBP"
+    },
+    {
+      "name": "thread",
+      "value": "9187@Ankits-MBP.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    }
+  ],
+  "links": [],
+  "name": "selectStation",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1695207519516,
+  "stop": 1695207559475
+}

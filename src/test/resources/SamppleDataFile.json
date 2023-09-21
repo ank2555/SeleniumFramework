@@ -1,14 +1,11 @@
-
 {
-  "firstname":"Arina",
-  "lastname":"Jain",
-  "company":"Cognizant",
-  "countryName":"India",
-  "stateName":"Maharashtra",
-  "addressLineone":"Wakad",
-  "city":"Pune",
-  "postcode":"314001",
-  "email":"arina2403@gmail.com"
-
-
+  "firstname": "Arina",
+  "lastname": "Jain",
+  "company": "Cognizant",
+  "countryName": "India",
+  "stateName": "Maharashtra",
+  "addressLineone": "Wakad",
+  "city": "Pune",
+  "postcode": "314001",
+  "email": "arina2403@gmail.com"
 }

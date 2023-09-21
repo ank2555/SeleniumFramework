@@ -3,13 +3,13 @@ package org.selenium.pom.utils;
 import io.qameta.allure.Step;
 
 public class AllureLogger {
-	
+
 //    private static final Logger logger = LogManager.getLogger();
 
     private AllureLogger() {
         // hide default constructor for this util class
     }
-    
+
     /**
      * Uses the @Step annotation to log the given log message to Allure.
      *
@@ -19,5 +19,5 @@ public class AllureLogger {
     public static void logToAllure(String message) {
 //        logger.debug("Logged to allure: " + message);
     }
-    
+
 }

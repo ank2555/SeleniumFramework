@@ -1,0 +1,61 @@
+{
+  "uuid": "b25f30b4-8eaf-46d0-bbec-4e5fb1c0aeeb",
+  "historyId": "a575b508dc46d653b4d9ced303132379",
+  "fullName": "org.selenium.pom.tests.IRCTC.selectStation",
+  "labels": [
+    {
+      "name": "package",
+      "value": "org.selenium.pom.tests.IRCTC"
+    },
+    {
+      "name": "testClass",
+      "value": "org.selenium.pom.tests.IRCTC"
+    },
+    {
+      "name": "testMethod",
+      "value": "selectStation"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Default Suite"
+    },
+    {
+      "name": "suite",
+      "value": "SeleniumFramework"
+    },
+    {
+      "name": "subSuite",
+      "value": "org.selenium.pom.tests.IRCTC"
+    },
+    {
+      "name": "host",
+      "value": "Ankits-MacBook-Pro.local"
+    },
+    {
+      "name": "thread",
+      "value": "4286@Ankits-MacBook-Pro.local.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    }
+  ],
+  "links": [],
+  "name": "selectStation",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1695057590522,
+  "stop": 1695057595228
+}

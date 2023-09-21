@@ -1,1 +1,24 @@
-{"uuid":"9540fb07-a4b6-4317-877d-7e77ae259c51","name":"org.selenium.pom.Base.BaseTest.quitDriver","children":["365cc98e-3193-4c5b-a0b0-cce65745f98d"],"description":"","befores":[],"afters":[{"name":"quitDriver","status":"broken","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1686162226656,"stop":1686162226656}],"start":1686162226655,"stop":1686162226656}
+{
+  "uuid": "9540fb07-a4b6-4317-877d-7e77ae259c51",
+  "name": "org.selenium.pom.Base.BaseTest.quitDriver",
+  "children": [
+    "365cc98e-3193-4c5b-a0b0-cce65745f98d"
+  ],
+  "description": "",
+  "befores": [],
+  "afters": [
+    {
+      "name": "quitDriver",
+      "status": "broken",
+      "stage": "finished",
+      "description": "",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686162226656,
+      "stop": 1686162226656
+    }
+  ],
+  "start": 1686162226655,
+  "stop": 1686162226656
+}

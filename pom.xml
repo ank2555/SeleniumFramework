@@ -16,27 +16,27 @@
 
     </properties>
 
-            <build>
+    <build>
 
-                <plugins>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-surefire-plugin</artifactId>
-                        <version>3.0.0-M6</version>
-                        <configuration>
-                            <!--<parallel>methods</parallel>
-                            <threadCount>5</threadCount>-->
-                            <suiteXmlFiles>
-                                <suiteXmlFile>testng.xml</suiteXmlFile>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.0.0-M6</version>
+                <configuration>
+                    <!--<parallel>methods</parallel>
+                    <threadCount>5</threadCount>-->
+                    <suiteXmlFiles>
+                        <suiteXmlFile>testng.xml</suiteXmlFile>
 
-                            </suiteXmlFiles>
+                    </suiteXmlFiles>
 
-                        </configuration>
-                    </plugin>
+                </configuration>
+            </plugin>
 
-                </plugins>
+        </plugins>
 
-            </build>
+    </build>
     <dependencies>
 
         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
@@ -45,8 +45,15 @@
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
-            <version>4.8.3</version>
+            <version>4.12.1</version>
         </dependency>
+
+        <dependency>
+            <groupId>com.simtechdata</groupId>
+            <artifactId>FixTess4j4Mac</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
 
         <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
         <dependency>
@@ -123,7 +130,6 @@
         </dependency>
 
 
-
         <!-- https://mvnrepository.com/artifact/log4j/log4j -->
         <dependency>
             <groupId>log4j</groupId>
@@ -170,16 +176,12 @@
         </dependency>
 
 
-
-
         <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>8.0.28</version>
         </dependency>
-
-
 
 
         <!-- Dependency for POI API -->
@@ -199,8 +201,6 @@
         </dependency>
 
 
-
-
         <!-- http://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
 
         <!-- https://mvnrepository.com/artifact/org.dom4j/dom4j -->
@@ -211,14 +211,12 @@
         </dependency>
 
 
-
         <!-- https://mvnrepository.com/artifact/org.apache.xmlbeans/xmlbeans -->
         <dependency>
             <groupId>org.apache.xmlbeans</groupId>
             <artifactId>xmlbeans</artifactId>
             <version>5.0.3</version>
         </dependency>
-
 
 
         <!-- http://mvnrepository.com/artifact/org.apache.poi/poi-ooxml-schemas -->
@@ -236,13 +234,20 @@
             <version>2.13.1</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
         <dependency>
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
-            <version>5.1.0</version>
+            <version>5.5.3</version>
         </dependency>
 
 
+        <!-- https://mvnrepository.com/artifact/net.sourceforge.tess4j/tess4j -->
+        <dependency>
+            <groupId>net.sourceforge.tess4j</groupId>
+            <artifactId>tess4j</artifactId>
+            <version>5.8.0</version>
+        </dependency>
 
 
         <dependency>
@@ -250,8 +255,6 @@
             <artifactId>lombok</artifactId>
             <version>1.18.22</version>
         </dependency>
-
-
 
 
     </dependencies>

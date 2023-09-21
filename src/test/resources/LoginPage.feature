@@ -1,8 +1,6 @@
 Feature: Login on Application site
 
 
-
-
   Scenario: Account Creation on Merchant Site
     Given User is on Merchant Page
     When User Click on Account to Login

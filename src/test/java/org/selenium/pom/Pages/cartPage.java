@@ -7,7 +7,7 @@ import org.selenium.pom.Base.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.By;
 
-public class  cartPage extends BasePage {
+public class cartPage extends BasePage {
 
 
 /*
@@ -17,12 +17,16 @@ public class  cartPage extends BasePage {
     public cartPage(WebDriver driver) {
         super(driver);
 
-        PageFactory.initElements(driver,this);
+        PageFactory.initElements(driver, this);
     }
 
-    @FindBy(how=How.CSS, using=".has-text-align-center") private WebElement cartPage;
-    @FindBy(css = "td[class='product-name'] a") private WebElement CartDetail;
-    @FindBy(css = ".checkout-button.button.alt.wc-forward") @CacheLookup private WebElement Checkout;
+    @FindBy(how = How.CSS, using = ".has-text-align-center")
+    private WebElement cartPage;
+    @FindBy(css = "td[class='product-name'] a")
+    private WebElement CartDetail;
+    @FindBy(css = ".checkout-button.button.alt.wc-forward")
+    @CacheLookup
+    private WebElement Checkout;
 
 
 
@@ -40,16 +44,14 @@ public class  cartPage extends BasePage {
 */
 
 
-    public String checkCartProduct()
-    {
+    public String checkCartProduct() {
 
-     return    waitShort.until(ExpectedConditions.elementToBeClickable(CartDetail)).getText();
-       // return driver.findElement(CartDetail).getText();
+        return waitShort.until(ExpectedConditions.elementToBeClickable(CartDetail)).getText();
+        // return driver.findElement(CartDetail).getText();
     }
 
 
-    public checkoutPage checkoutMethod()
-    {
+    public checkoutPage checkoutMethod() {
         Checkout.click();
         //driver.findElement(Checkout).click();
         return new checkoutPage(driver);

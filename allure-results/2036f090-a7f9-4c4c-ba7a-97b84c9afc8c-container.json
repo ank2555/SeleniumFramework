@@ -1,0 +1,11 @@
+{
+  "uuid": "2036f090-a7f9-4c4c-ba7a-97b84c9afc8c",
+  "name": "org.selenium.pom.tests.Test2",
+  "children": [
+    "6ebf53bb-ee31-4a30-a2e7-160e5937bc44"
+  ],
+  "befores": [],
+  "afters": [],
+  "start": 1688183472318,
+  "stop": 1688183483987
+}

@@ -1,0 +1,63 @@
+{
+  "uuid": "011872ca-aae3-4065-89b4-b8ad84c48743",
+  "historyId": "eedc7ca8e0bb4379945185085c1a2fb1",
+  "fullName": "org.selenium.pom.tests.IRCTC.loginAccount",
+  "labels": [
+    {
+      "name": "package",
+      "value": "org.selenium.pom.tests.IRCTC"
+    },
+    {
+      "name": "testClass",
+      "value": "org.selenium.pom.tests.IRCTC"
+    },
+    {
+      "name": "testMethod",
+      "value": "loginAccount"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Default Suite"
+    },
+    {
+      "name": "suite",
+      "value": "SeleniumFramework"
+    },
+    {
+      "name": "subSuite",
+      "value": "org.selenium.pom.tests.IRCTC"
+    },
+    {
+      "name": "host",
+      "value": "Ankits-MacBook-Pro.local"
+    },
+    {
+      "name": "thread",
+      "value": "17782@Ankits-MacBook-Pro.local.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    }
+  ],
+  "links": [],
+  "name": "loginAccount",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "Tesseract does not exist at\n\n/usr/local/Cellar/tesseract\n\nPlease run:\n\nbrew update\nbrew install tesseract\n\nThen try again.",
+    "trace": "java.lang.RuntimeException: Tesseract does not exist at\n\n/usr/local/Cellar/tesseract\n\nPlease run:\n\nbrew update\nbrew install tesseract\n\nThen try again.\n\tat com.simtechdata.FixTess4j4Mac.getTesseractFolder(FixTess4j4Mac.java:150)\n\tat com.simtechdata.FixTess4j4Mac.getDataPath(FixTess4j4Mac.java:81)\n\tat org.selenium.pom.tests.IRCTC.loginAccount(IRCTC.java:68)\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:577)\n\tat org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)\n\tat org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)\n\tat org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)\n\tat org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)\n\tat org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)\n\tat org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)\n\tat org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)\n\tat org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\n\tat org.testng.TestRunner.privateRun(TestRunner.java:829)\n\tat org.testng.TestRunner.run(TestRunner.java:602)\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:437)\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:330)\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1176)\n\tat org.testng.TestNG.runSuites(TestNG.java:1099)\n\tat org.testng.TestNG.run(TestNG.java:1067)\n\tat com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)\n\tat com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)\n"
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1694796992088,
+  "stop": 1694796998433
+}

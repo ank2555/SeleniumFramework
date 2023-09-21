@@ -1,0 +1,24 @@
+{
+  "uuid": "3a16129b-4652-4bb6-88a9-9b2e40214586",
+  "name": "org.selenium.pom.Base.BaseTest.startDriver",
+  "children": [
+    "97538418-66a2-4e4a-a26b-b984a537cc2c"
+  ],
+  "description": "",
+  "befores": [
+    {
+      "name": "startDriver",
+      "status": "passed",
+      "stage": "finished",
+      "description": "",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1695046336004,
+      "stop": 1695046338859
+    }
+  ],
+  "afters": [],
+  "start": 1695046336004,
+  "stop": 1695046338859
+}

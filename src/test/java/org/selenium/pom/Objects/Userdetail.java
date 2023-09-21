@@ -7,17 +7,14 @@ public class Userdetail {
     private String Password;
 
 
-
-    public Userdetail()
-    {
+    public Userdetail() {
 
     }
 
 
-    public Userdetail(String username, String password)
-    {
-        this.Password=password;
-        this.Username=username;
+    public Userdetail(String username, String password) {
+        this.Password = password;
+        this.Username = username;
     }
 
 
@@ -36,11 +33,6 @@ public class Userdetail {
     public void setPassword(String password) {
         Password = password;
     }
-
-
-
-
-
 
 
 }

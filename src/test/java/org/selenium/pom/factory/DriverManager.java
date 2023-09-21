@@ -12,22 +12,20 @@ import org.selenium.pom.utils.Props;
 
 public class DriverManager {
 
-    public WebDriver InitializeDriver(String  browser)
-    {
+    public WebDriver InitializeDriver(String browser) {
 
         WebDriver driver;
-       //  System.getProperty("browser");
+        //  System.getProperty("browser");
         //browser = Props.getProp("browser");
         System.out.println(browser);
-       // Props.getProp("browser");
-        switch (browser.toLowerCase())
-        {
+        // Props.getProp("browser");
+        switch (browser.toLowerCase()) {
             case ("firefox") -> {
                 WebDriverManager.firefoxdriver().cachePath("Drivers").setup();
                 driver = new FirefoxDriver();
             }
 
-            case ("chrome")  -> {
+            case ("chrome") -> {
                 WebDriverManager.chromedriver().cachePath("Drivers").setup();
                 driver = new ChromeDriver();
             }
@@ -37,18 +35,17 @@ public class DriverManager {
             }
 
 
-
             default -> throw new IllegalStateException("Invalid browser Name:" + browser);
         }
 
 
-         //System.setProperty("webdriver.chrome.driver","/Users/ank255/Downloads/chromedriver");
+        //System.setProperty("webdriver.chrome.driver","/Users/ank255/Downloads/chromedriver");
         //  WebDriver driver=new ChromeDriver()
         //  WebDriver driver=new ChromeDriver();
         //   WebDriver driver=new SafariDriver();
 
         //   WebDriverManager.firefoxdriver().cachePath("Drivers").setup();
-    //   WebDriverManager.chromedriver().cachePath("Drivers").setup();
+        //   WebDriverManager.chromedriver().cachePath("Drivers").setup();
 
         /*
    WebDriver   driver = new FirefoxDriver();
@@ -63,7 +60,7 @@ public class DriverManager {
         //Dimension d=new Dimension(50,50);
         //driver.manage().window().fullscreen();
 
-return driver;
+        return driver;
 
 
     }

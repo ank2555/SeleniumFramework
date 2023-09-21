@@ -1,0 +1,24 @@
+{
+  "uuid": "547e4221-d332-4fc5-821d-50052da48b2f",
+  "name": "org.selenium.pom.Base.BaseTest.quitDriver",
+  "children": [
+    "0e6e7738-b953-4d29-9955-e541f0a533a4"
+  ],
+  "description": "",
+  "befores": [],
+  "afters": [
+    {
+      "name": "quitDriver",
+      "status": "passed",
+      "stage": "finished",
+      "description": "",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1694783861950,
+      "stop": 1694783862543
+    }
+  ],
+  "start": 1694783861949,
+  "stop": 1694783862543
+}

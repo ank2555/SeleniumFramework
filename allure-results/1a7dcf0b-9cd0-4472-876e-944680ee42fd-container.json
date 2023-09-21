@@ -1,1 +1,24 @@
-{"uuid":"1a7dcf0b-9cd0-4472-876e-944680ee42fd","name":"org.selenium.pom.Base.BaseTest.startDriver","children":["e83ead8f-e9ef-430e-b441-2b4ae9dafefd"],"description":"","befores":[{"name":"startDriver","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1686169151011,"stop":1686169153650}],"afters":[],"start":1686169151010,"stop":1686169153650}
+{
+  "uuid": "1a7dcf0b-9cd0-4472-876e-944680ee42fd",
+  "name": "org.selenium.pom.Base.BaseTest.startDriver",
+  "children": [
+    "e83ead8f-e9ef-430e-b441-2b4ae9dafefd"
+  ],
+  "description": "",
+  "befores": [
+    {
+      "name": "startDriver",
+      "status": "passed",
+      "stage": "finished",
+      "description": "",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686169151011,
+      "stop": 1686169153650
+    }
+  ],
+  "afters": [],
+  "start": 1686169151010,
+  "stop": 1686169153650
+}
